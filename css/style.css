@@ -16,11 +16,12 @@ body {
     background-color: lightblue;
     background-image: url("../img/fondo.jpg");
     background-attachment:fixed;
+    background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
 }
 
-form {
+.formularioLogueo, .formularioRegistro {
     display: flex;
     flex-direction:column;
     width: 75%;
@@ -32,8 +33,7 @@ form {
     background-color: rgba(0,0,0,.7);
 }
 
-input[type="text"],
-input[type="password"]{
+.campoTexto {
     width: 100%;    
     padding: 1vh;
     outline: none;
@@ -47,7 +47,7 @@ input[type="password"]{
     justify-content: center;
 }
 
-input[type="submit"]{
+.boton{
     padding: 1vh;
     width: 50%;
     min-width: 25%;
@@ -86,3 +86,13 @@ input[type="submit"]{
     margin: auto auto;
 }
 
+.centrarCosas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campos {
+    margin: auto auto;
+}
